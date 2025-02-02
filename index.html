@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TompasLife | Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- favicon from my own domain -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://tompaslife.se/Img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://tompaslife.se/Img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://tompaslife.se/Img/favicon-16x16.png"
+    />
+  </head>
+
+  <body>
+    <!-- Grid container contains login, img and footer -->
+    <div class="grid-container">
+      <!-- Container with login & img logo -->
+      <div class="login-container">
+        <!-- Left box for login form -->
+        <div class="login-form">
+          <!-- Title and welcome text -->
+          <h1 class="title">TompasLife</h1>
+          <h2 class="welcome">Welcome to TompasLife</h2>
+          <!-- Form for user inputs -->
+          <form action="#" method="POST">
+            <!-- Div for mail and password input field -->
+            <div class="input">
+              <label for="username">Email:</label>
+              <input type="text" name="username" id="username" required />
+              <label for="password">Password:</label>
+              <input type="password" name="pasword" id="password" required />
+            </div>
+            <!-- Div for checkbox & button -->
+            <div class="action">
+              <input type="submit" class="button" value="Login" />
+              <!-- Div to set text & checkbox next to each other -->
+              <div class="remember">
+                <label for="remember">Remember Me</label>
+                <input type="checkbox" name="remember" id="remember" />
+              </div>
+            </div>
+            <!-- Div contains text & button for registration -->
+            <div class="new-user">
+              <!-- Span to get text in same line -->
+              <p class="join-us">
+                New to <span class="green">TompasLife</span>? Join us
+              </p>
+              <!-- Button to register new account -->
+              <input type="button" class="button" value="Register" />
+            </div>
+          </form>
+        </div>
+        <!-- Div for img logo at right side -->
+        <div class="login-logo">
+          <img
+            src="https://tompaslife.se/Img/logo.png"
+            alt="baby with sport logo"
+          />
+        </div>
+      </div>
+      <!-- footer at bottom -->
+      <footer class="footer">
+        <p>
+          &copy; 2025 TompasLife F25D | Simple version |
+          <a href="https://tompaslife.se/">TompasLife</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

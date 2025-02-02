@@ -1,0 +1,187 @@
+/* Universal CSS props */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Give background a linear-gradient of green */
+body {
+  background: linear-gradient(135deg, #5b913b, #77b254);
+}
+
+/* Grid-container setting everything in right order and size */
+.grid-container {
+  /* This gives us login-box 800x600px */
+  /* and a footer by 800x30px in center at fullscreen */
+  grid-template-columns: auto 800px auto;
+  grid-template-rows: auto 600px 30px auto;
+  /* 100% of the viewport height */
+  height: 100vh;
+  /* Aligns grid items in center */
+  place-items: center;
+  /* Layout for grid template */
+  grid-template-areas:
+    ". . ."
+    ". login-container ."
+    ". footer .";
+  display: grid;
+}
+
+/* Styling container with round shadow corners, flex etc. */
+.login-container {
+  grid-area: login-container; /* Adds placment in grid template */
+  background-color: white;
+  display: flex;
+  overflow: hidden; /* Prevents img to overflow */
+  border-radius: 60px;
+  box-shadow: 10px 10px 50px black;
+}
+
+/* Set 100% height & width of img to fit login-container */
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Aligns content vertically */
+  padding: 0px 80px; /* Add padding to get distance between pic & login form */
+}
+
+/* Styling to title text */
+.title {
+  font-size: 70px;
+  color: #5b913b;
+}
+
+/* Styling to welcome text */
+.welcome {
+  font-size: 20px;
+  color: black;
+  margin-top: -18px;
+  text-align: end;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.input {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Aligns text and input fields in column */
+}
+
+/* Give email and password text fontsize and color */
+.input label {
+  font-size: 20px;
+  color: black;
+  margin-bottom: -11px; /* Bring text closer to input fields*/
+}
+
+/* Styling to both input fields */
+.input input {
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/* Give space between login button and checkbox  */
+.action {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling to buttons */
+.button {
+  padding: 10px 15px;
+  font-size: 15px;
+  background-color: #5b913b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Change cursor to pointer when hovering over button */
+}
+
+/* Effect for buttons */
+.button:hover {
+  background-color: #77b254;
+}
+
+/* Style to register button */
+.new-user {
+  font-size: 20px;
+  color: black;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+/* color green to span text*/
+span.green {
+  color: green;
+}
+
+/* Styling to footer */
+footer {
+  grid-area: footer;
+  color: rgba(0, 0, 0, 0.178);
+}
+
+/* Style to hidden link at bottom in footer */
+a {
+  color: rgba(0, 0, 0, 0.178);
+  text-decoration: none;
+}
+
+/* Media query for screens 768px and smaller */
+@media (max-width: 768px) {
+  /* No login logo */
+  img {
+    display: none;
+  }
+
+  /* Set grid to 380x400px and footer 380x30px */
+  .grid-container {
+    grid-template-rows: auto 400px 30px auto;
+    grid-template-columns: auto 380px auto;
+  }
+
+  /*  another padding to fit smaller screens  */
+  .login-form {
+    padding: 0px 48px;
+  }
+
+  /* Change font and margin on title text */
+  .title {
+    font-size: 50px;
+    margin-top: 10px;
+  }
+
+  /* email & login text smaller */
+  .input label {
+    font-size: 18px;
+  }
+
+  /* change margin on welcome text  */
+  .welcome {
+    margin-top: 0px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* less margin at top to fit smaller screens */
+  .new-user {
+    margin-top: 20px;
+  }
+
+  /* add more margin to look better */
+  .new-user > .button {
+    margin-bottom: 20px;
+  }
+}
