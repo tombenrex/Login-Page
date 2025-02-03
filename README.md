@@ -1,11 +1,17 @@
 
 <p float="right">
-  <img src="https://github.com/tombenrex/LoginPage2/blob/main/img/Fullscreen-preview.png" height="200"  />
-  <img src="https://github.com/tombenrex/LoginPage2/blob/main/img/768px-preview.png" height="200" /> 
+  <img src="https://github.com/tombenrex/LoginPage2/blob/main/img/Fullscreen-preview.png" height="280"  />
+  <img src="https://github.com/tombenrex/LoginPage2/blob/main/img/768px-preview.png" height="280" /> 
   
 </p>
 
 
+##
+  <b>Min första login sida.</b> </br>
+  Detta är en skoluppgift skapad med CSS och HTML i VS Code. 
+
+
+##
 
 # F25D-Uppgift 1 - Log in page
 
