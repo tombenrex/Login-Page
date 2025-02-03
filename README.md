@@ -1,7 +1,7 @@
 
 <p float="right">
-  <img src="https://github.com/tombenrex/LoginPage2/blob/main/img/Fullscreen-preview.png" height="300"  />
-  <img src="https://github.com/tombenrex/LoginPage2/blob/main/img/768px-preview.png" height="300" /> 
+  <img src="https://github.com/tombenrex/LoginPage2/blob/main/img/Fullscreen-preview.png" height="200"  />
+  <img src="https://github.com/tombenrex/LoginPage2/blob/main/img/768px-preview.png" height="200" /> 
   
 </p>
 
