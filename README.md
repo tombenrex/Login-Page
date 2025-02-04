@@ -47,7 +47,7 @@ Föreställ dig att du har blivit ombedd att skapa en enkel inloggningssida för
 
 - 🌱 I’m currently learning **HTML, Javascript, CSS, React**
 
-- 📫 How to reach me **tmlsn@hotmail.com**
+- 📫 How to reach me **92tomlar@skola.boras.se**
 
 - ⚡ Fun fact **Started build houses now building webpages**
 
