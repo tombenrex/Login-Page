@@ -7,8 +7,8 @@
 <p align="center">
 :point_right:<a href="https://tombenrex.github.io/Login-Page/" target="blank">Live Server</a> :point_left:
 </p>
-##
-#  <b>Min första login sida.</b> </br>
+
+ <b>Min första login sida.</b> </br>
   Detta är en skoluppgift skapad med CSS och HTML i VS Code. 
 
 
